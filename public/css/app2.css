@@ -1042,7 +1042,7 @@ li {
 }
 
 .yscbanner5 {
-    width: 80%;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
     height: 100%;
@@ -1076,7 +1076,7 @@ li {
     margin-top: 25px;
     font-size: 19px;
     color: #fff;
-    font-weight: 300;
+    font-weight: 400;
     text-align: left;
     line-height: 32px;
 }
@@ -1358,10 +1358,8 @@ li {
     padding-right: 50px; */
     margin-left: auto;
     margin-right: auto;
-    width: 1172;
+    width: 1200;
     margin-top: 30px;
-    padding-left: 1%;
-    padding-right: 1%;
 }
 
 .iconPics {
@@ -1376,7 +1374,9 @@ li {
     float: left;
 }
 
-.iconPic1 {}
+.iconPic1 {
+    margin-left: 1%;
+}
 
 .iconPic2 {
     margin-left: 2%;
@@ -1577,7 +1577,7 @@ li {
 
 .footer {
     height: auto !important;
-    overflow: hidden
+    /* overflow: hidden */
 }
 
 .iconPics .iconPic:nth-child(5) .icons_ {
@@ -1751,7 +1751,7 @@ li {
 
 .rCons_con02 {
     height: 520px;
-    width: 1100px;
+    width: 1200px;
     margin: 0 auto
 }
 
@@ -1761,7 +1761,7 @@ li {
 }
 
 .rCons_con02 .img {
-    padding-top: 90px;
+    padding-top: 30px;
     float: right;
     padding-left: 10px
 }
@@ -1777,7 +1777,8 @@ li {
 }
 
 .rCons_02 .fonts {
-    padding-top: 110px
+    padding-top: 80px;
+    padding-left: 30px;
 }
 
 .rCons_02 .fonts .sp1 {
@@ -2027,7 +2028,7 @@ li {
 
 .yxdCon03C {
     width: 1000px;
-    height: 520px;
+    height: 480px;
     margin: 0 auto;
     overflow: hidden
 }
@@ -2097,7 +2098,7 @@ li {
 
 .yxdCon04 {
     width: auto;
-    height: 520px;
+    height: 500px;
     background: #fff
 }
 
@@ -2189,7 +2190,7 @@ li {
 }
 
 .yxdCon05c {
-    width: 1190px;
+    width: 1200px;
     height: auto;
     margin: 0 auto
 }
@@ -2213,7 +2214,7 @@ li {
 .yxdCon05c .spans {
     width: auto;
     text-align: center;
-    padding-top: 50px
+    padding-top: 30px
 }
 
 .sqdCon05c .spans {
@@ -2258,8 +2259,8 @@ li {
 }
 
 .yxdCon01 ul.ysc_ul li {
-    margin: 15px;
-    width: 570px;
+    margin-bottom: 15px;
+    width: 585px;
     height: 180px;
     float: left;
     background: #fff;
@@ -2378,7 +2379,7 @@ li {
 .yxdCon06 {
     width: auto;
     height: 420px;
-    padding: 40px 0
+    /* padding: 40px 0 */
 }
 
 .yxdCon06 .imgs {
@@ -3680,7 +3681,7 @@ yxdCon06 .imgs .img .pic {
 .customerServices_ .qq {
     width: 50px;
     height: 50px;
-    background: #FFF;
+    background: rgb(38, 184, 242);
     display: block !important;
     border-radius: 60px;
     -moz-border-radius: 60px;
@@ -3777,7 +3778,8 @@ display: block;
     height: 84px;
     border-radius: 8px;
     margin: -20px auto 0 auto;
-    background: #FFF;
+    background: rgb(38, 184, 242);
+    color: #fff;
     padding-top: 20px;
     text-align: center;
 
@@ -3829,7 +3831,7 @@ display: block;
 
 .customerServices_ .qr i {
     font-size: 14px;
-    color: #333333;
+    color: #fff;
     transition: color .2s linear;
     line-height: 19px;
 }

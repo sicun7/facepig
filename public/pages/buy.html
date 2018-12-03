@@ -35,51 +35,78 @@
 <body>
     <div id="header_nav"></div>
 
-    <div class="download">
-        <section class="banner">
-            <div class="c">
-                <div class="banner-content">
-                    <div class="banner-content-desc">
-                        <h3>脸&nbsp;猪</h3>
-                        <p class="f-title">做淘客&nbsp;&nbsp;用脸猪</p>
-                        
-                        <a id="userAgent" href="http://www.facezhu.com/脸猪返利机器人-公测版.rar" target="_blank" class="dw-btn dw-zm-btn">下载</a>
-                        <!-- <a id="userAgent" href="https://share.weiyun.com/5u2Aq1z" target="_blank" class="dw-btn dw-zm-btn">下载</a> -->
-                        <!-- <div class="line-or">
-                            <span></span>
-                            OR
-                            <span></span>
-                        </div>
-                        <a href="javascript:;" target="_blank" class="dw-btn mt20">
-                            手机端
-                            <div class="erweima">
-                                <img src="//web-img.qmimg.com/test/qianmicom/u/resource/public/images/qianmi_pc_app_2d69063.png"
-                                    width="108" height="108">
-                            </div>
-                        </a>
-                        <br>
-                        <a href="javascript:;" target="_blank" class="dw-btn mt10 hd-btn">
-                            Pad端
-                            <div class="erweima">
-                                <img src="//web-img.qmimg.com/qianmicom/u/cms/mqianmi2/201710/27183529rco1.png">
-                            </div>
-                        </a> -->
-                    </div>
-
+    <div class="productCon">
+        <div class="pro_tit">
+            <h3>
+                做淘客, 用脸猪
+            </h3>
+            <span>
+                QQ转账后自动秒发货
+            </span>
+        </div>
+        <ul class="proCon">
+            <li class="h">
+                <i class="rec"></i>
+                <div class="prices">
+                    <span>¥</span>100</div>
+                <div class="bHover">
 
                 </div>
-            </div>
-        </section>
+                <div class="info">
+                    月卡
+                </div>
+                <div class="discount">
+
+                </div>
+                <a class="tryNow btn_o2o" target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2776199978&amp;site=qq&amp;menu=yes">
+                    立即购买
+                </a>
+            </li>
+
+            <li class="h">
+                <i class="rec"></i>
+                <div class="prices">
+                    <span>¥</span>980</div>
+                <div class="bHover">
+
+                </div>
+                <div class="info">
+                    年卡
+                </div>
+                <div class="discount">
+
+                </div>
+                <a class="tryNow btn_o2o" target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2776199978&amp;site=qq&amp;menu=yes">
+                    立即购买
+                </a>
+            </li>
+
+            <!-- <li>
+                <i class="rec"></i>
+                <div class="prices">
+                    <span>¥</span>47400</div>
+                <div class="bHover">
+
+                </div>
+                <div class="info">
+                    买3年 + 送2年
+                </div>
+                <div class="discount">
+                    折合790元 / 月
+                </div>
+                <a class="tryNow btn_o2o" href="https://www.1000.com/exp?us=3W-o2o&amp;sceneType=o2o" target="_blank">
+                    立即购买
+                </a>
+            </li> -->
+        </ul>
     </div>
 </body>
-
-
 
 <script>
     $.get("/pages/header.html", function (data) {
         $("#header_nav").append(data);
         $('.nav_item').removeClass('on');
-        $('.nav_download').addClass('on');
+        $('.nav_buy').addClass('on');
     });
 
     $.get("/pages/foot.html", function (data) {

@@ -508,7 +508,7 @@ table {
 .block_title2 figcaption {
     font-size: 24px;
     color: #333;
-    margin: 60px 0 15px;
+    /* margin: 60px 0 15px; */
     text-align: center
 }
 
@@ -1741,7 +1741,8 @@ a.item .icon-jiejuefangan {
     text-align: center;
     background: #fff;
     margin-right: 10px;
-    transition: all .2s linear
+    transition: all .2s linear;
+    border-radius: 20px;
 }
 
 .index .s2 li:hover {
@@ -2450,7 +2451,7 @@ a.item .icon-jiejuefangan {
 }
 
 .chapter_nav {
-    border-top: 1px solid #f5f5f5;
+    /* border-top: 1px solid #f5f5f5; */
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .04);
     height: 50px;
     background-color: #fafafa
@@ -4079,6 +4080,7 @@ a.item .icon-jiejuefangan {
     width: 1035px;
     height: 392px;
     margin: 0 auto;
+    /* background: url(/resource/image/10.png) no-repeat right; */
     background: url(//web-img.qmimg.com/qianmicom/u/cms/mqianmi2/201710/23223318z8f1.png) no-repeat right
 }
 

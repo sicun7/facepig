@@ -263,22 +263,6 @@ $('.pinpai').click(function () {
         }
     }(jQuery);
 
-
-var swiper = new Swiper('.swiper-container', {
-    // pagination: {
-    //     el: '.swiper-pagination',
-    // },
-    speed: 600,
-    autoplay: {
-        delay: 5000
-    },
-    loop: true,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-});
-
 $(document).ready(function () {
     $('.chapter_nav').scrollToFixed();
 });

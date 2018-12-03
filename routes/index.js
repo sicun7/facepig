@@ -7,16 +7,20 @@ router.get('/', function (req, res, next) {
   res.sendfile('public/pages/index.html');
 });
 
-router.get('/fn', function (req, res, next) {
-  res.sendfile('public/pages/fn.html');
+router.get('/product', function (req, res, next) {
+  res.sendfile('public/pages/product.html');
 });
 
 router.get('/download', function (req, res, next) {
   res.sendfile('public/pages/download.html');
 });
 
-router.get('/price', function (req, res, next) {
-  res.sendfile('public/pages/price.html');
+router.get('/buy', function (req, res, next) {
+  res.sendfile('public/pages/buy.html');
+});
+
+router.get('/course', function (req, res, next) {
+  res.sendfile('public/pages/course.html');
 });
 
 router.get('/test', function (req, res, next) {
