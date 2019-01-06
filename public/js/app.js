@@ -61,38 +61,6 @@ $(function() {
         $(this).addClass('beijing2');
       });
 
-      $('document').ready(function() {
-        //windows  apkUrl  是版本地址
-        var wind, mac1;
-        $.ajax({
-          url:
-            'https://aresapi.qianmi.com/api/app/version/last?pid=15&platform=w',
-          async: false,
-          success: function(data) {
-            wind = data.data.apkUrl;
-          }
-        });
-        //mac
-        $.ajax({
-          url:
-            'https://aresapi.qianmi.com/api/app/version/last?pid=16&platform=m',
-          async: false,
-          success: function(data) {
-            mac1 = data.data.apkUrl;
-          }
-        });
-
-        $('#userAgent').attr('href', wind);
-        $('#userAgent').click(function() {
-          ga('send', 'event', 'download', 'window', 'index-download');
-        });
-
-        $('#userAgentMac').attr('href', mac1);
-        $('#userAgentMac').click(function() {
-          ga('send', 'event', 'download', 'MAC', 'index-download');
-        });
-      });
-
       //解决首屏图片加载慢问题
       var ele = document.querySelector('.shouyeimg2');
       var imgUrl = document.querySelector('.item01').getAttribute('data-src');
