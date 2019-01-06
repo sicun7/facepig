@@ -130,16 +130,6 @@ $(function() {
           .removeClass('qmshow')
           .addClass('qmhide');
       });
-      //千米动态
-      var mySwiper = new Swiper('.swiper-container', {
-        direction: 'horizontal',
-        loop: true,
-        autoplay: 7000,
-        speed: 1500,
-        pagination: '.swiper-pagination',
-        autoplayDisableOnInteraction: false,
-        paginationClickable: true
-      });
 
 
       $(function () {
