@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/list', function(req, res, next) {
-  res.send('user list 1');
+  res.send('user list');
 });
 
 module.exports = router;

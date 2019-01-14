@@ -23,6 +23,10 @@ router.get('/course', function (req, res, next) {
   res.sendfile('public/pages/course.html');
 });
 
+router.get('/agent', function (req, res, next) {
+  res.sendfile('public/pages/agent.html');
+});
+
 router.get('/test', function (req, res, next) {
   res.render('test', {
     title: '测试内容'

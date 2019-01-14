@@ -269,3 +269,27 @@ html{width:100vW;overflow-x:hidden}.header{width:100vw;height:80px;background-co
 .wixin_code_float p{
     text-align:center;
 }
+
+.agent_container  h4 img{
+    display: inline-block !important;
+}
+
+.join_agent{
+    margin-top: 20px !important;
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    background: #f8b600;
+    border: 1px solid #f8b600;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+    -ms-border-radius: 4px;
+    display: inline-block;
+    margin: 0 auto;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    font-weight: 400;
+}
