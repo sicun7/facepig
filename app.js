@@ -24,6 +24,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
+app.get('/tencent8689577942479610114.txt',(req,res) => res.send('10484166673880119754'));
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
