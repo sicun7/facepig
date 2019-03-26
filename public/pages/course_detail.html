@@ -102,6 +102,12 @@
             hour = date.getHours(),
             min = date.getMinutes(),
             sec = date.getSeconds();
+
+            month = month < 10 ? '0'+month : month;
+            day = day < 10 ? '0'+day : day;
+            hour = hour < 10 ? '0'+hour : hour;
+            min = min < 10 ? '0'+min : min;
+
         var newTime = year + '-' +
             month + '-' +
             day + ' ' +
@@ -109,6 +115,7 @@
             min
         return newTime;
     }
+
 
     function generate(item) {
         var html = `<article data-v-f9ae5008="" itemscope="itemscope"  class="article" data-v-f6fdafdc="">
