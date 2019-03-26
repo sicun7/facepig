@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>脸猪返利机器人官网  -  facepig.cn  集淘宝、京东、拼多多多合一的微信QQ自动提现、返利、发单、发朋友圈的返利机器人</title>
-    <meta name="keywords" content="脸猪返利机器人,微信返利,QQ返利,安娜尔返利机器人,悠哉返利机器人,速推单,淘宝返利机器人,京东返利机器人,拼多多返利,淘客机器人,淘猫返利机器人,微信导购,优惠券发单,返利软件,蚂蚁返利">
-    <meta name="description" content="脸猪微信QQ返利机器人（facepig.cn），淘宝客软件第一品牌。2019年全新打造，微信返利机器人软件、QQ返利机器人、淘宝京东拼多多三合一返利机器人，全自动挂机赚钱。自动提现、自动找券返利、自动发单、自动发朋友圈、自动申请高佣，裂变引流，支持群主代理，名片和海报推广，支持VIP影视引流">
+    <title>脸猪返利机器人官网 - facepig.cn 集淘宝、京东、拼多多多合一的微信QQ自动提现、返利、发单、发朋友圈的返利机器人</title>
+    <meta name="keywords"
+        content="脸猪返利机器人,微信返利,QQ返利,安娜尔返利机器人,悠哉返利机器人,速推单,淘宝返利机器人,京东返利机器人,拼多多返利,淘客机器人,淘猫返利机器人,微信导购,优惠券发单,返利软件,蚂蚁返利">
+    <meta name="description"
+        content="脸猪微信QQ返利机器人（facepig.cn），淘宝客软件第一品牌。2019年全新打造，微信返利机器人软件、QQ返利机器人、淘宝京东拼多多三合一返利机器人，全自动挂机赚钱。自动提现、自动找券返利、自动发单、自动发朋友圈、自动申请高佣，裂变引流，支持群主代理，名片和海报推广，支持VIP影视引流">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="Renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -23,7 +25,8 @@
     <meta http-equiv="Expires" content="0">
     <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
     <!-- Mobile Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
     <meta http-equiv="Cache-Control" content="no-transform">
     <meta http-equiv="Cache-Control" content="no-siteapp">
 
@@ -32,43 +35,32 @@
     <!-- 字体图标 -->
     <link rel="stylesheet" href="/css/font.css">
     <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/course.css">
 
     <script src="/js/jquery.min.js"></script>
 </head>
 
-
 <body>
     <div id="header_nav"></div>
 
-    <div style="margin-top:90px;">
-        <div class="yxdCon05c">
-            <div class="spans">
-                <div class="sp1">
-                    脸猪返利机器人使用教程
-                </div>
-            </div>
-            <div>
-                <video width="1200px" height="640px" controls>
-                    <source src="https://facepig-1256188836.file.myqcloud.com/shiyong.mp4" type="video/mp4">
-                    您的浏览器不支持 HTML5 video 标签。
-                </video>
-            </div>
+    <nav class="chapter_nav pinned" style="z-index: 1000; width: 960px; margin: auto; margin-top: 90px;">
+        <div class="c cb">
+            <ul class="cb" style="justify-content:left; " id="filter_ul">
+                <li><a class="on" onclick="filter(0)">全部</a></li>
+                <li><a onclick="filter(1)">使用教程</a></li>
+                <li><a onclick="filter(2)">干货分享</a></li>
+            </ul>
         </div>
+    </nav>
 
-        <div class="yxdCon05c">
-            <div class="spans">
-                <div class="sp1">
-                    返利比例和提成比例设置详解
-                </div>
-            </div>
-            <div>
-                <video width="1200px" height="640px" controls>
-                    <source src="https://facepig-1256188836.file.myqcloud.com/fanlibili.mp4" type="video/mp4">
-                    您的浏览器不支持 HTML5 video 标签。
-                </video>
-            </div>
-        </div>
+    <div class="body ydh-p3 agent_container" style="margin-top:10px;margin-bottom: 20px;">
+        <section class="c cb" style="width: 960px;">
+            <ul id="data_list" data-v-6a90e094="" data-v-9bfcd486="" st:block="entryList" class="entry-list">
+            
+            </ul>
+        </section>
     </div>
+
 </body>
 
 <script>
@@ -79,6 +71,117 @@
     $.get("/pages/foot.html", function (data) {
         $("body").append(data);
     });
+</script>
+
+
+<script>
+    var List = [];
+
+    function init() {
+        $.ajax({
+            url: '/tutorial_list',
+            type: 'GET',
+            dataType: 'json',
+            success: function (data) {
+                var html = ``;
+                if (data && data.code === 0) {
+                    var list = data.result || [];
+                    List = list;
+                    generate(list);
+                }
+            },
+            error: function (data) {
+                alert(data.msg);
+            }
+        });
+    }
+
+    function formatDate(time) {
+        var date = new Date(time);
+
+        var year = date.getFullYear(),
+            month = date.getMonth() + 1, //月份是从0开始的
+            day = date.getDate(),
+            hour = date.getHours(),
+            min = date.getMinutes(),
+            sec = date.getSeconds();
+        var newTime = year + '-' +
+            month + '-' +
+            day + ' ' +
+            hour + ':' +
+            min
+        return newTime;
+    }
+
+    function generate(list) {
+        var html = '';
+        list.forEach(function (item) {
+            html += `
+            <li data-v-6a90e094="" class="item">
+                <div data-v-08e3047a="" data-v-6a90e094="" class="entry-box">
+                    <div data-v-0cf60114="" data-v-08e3047a="" st:block="entry"
+                        st:state="5c9836f26fb9a070ac66aebb|3" class="entry"><a data-v-0cf60114=""
+                                target="_blank" rel="" st:name="link"
+                            class="entry-link">
+                            <div data-v-0cf60114="" class="content-box">
+                                <div data-v-0cf60114="" class="info-box">
+                                    <div data-v-0cf60114="" class="info-row meta-row">
+                                        <ul data-v-0cf60114="" class="meta-list">
+                                            ${item.type === 1 ? '<li data-v-0cf60114="" class="item hot">使用教程</li>' : '<li data-v-0cf60114="" class="item post">干货分享</li>'}
+                                            <li data-v-0cf60114="" class="item username clickable">
+                                                <div data-v-14a78378="" data-v-0cf60114="" st:block="userPopover"
+                                                    st:state="585b9ec961ff4b0063e76dbe" class="user-popover-box">
+                                                    <a data-v-0cf60114="" 
+                                                        st:name="user" st:state="585b9ec961ff4b0063e76dbe"
+                                                        data-v-14a78378="">${item.created_by}</a>
+                                                </div>
+                                            </li>
+                                            <li data-v-0cf60114="" class="item">${formatDate(item.created_time)}</li>
+                                        </ul>
+                                    </div>
+                                    <div data-v-0cf60114="" class="info-row title-row">
+                                        <a data-v-0cf60114="" target="_blank" href="/course_detail?id=${item.id}"
+                                            target="_blank" rel="" st:name="title"
+                                            class="title">${item.name}</a></div>
+                                    <div data-v-0cf60114="" class="info-row action-row">
+                                        <ul data-v-0cf60114="" class="action-list">
+                                            <li data-v-0cf60114="" st:name="likeBtn" class="item like clickable"><a
+                                                    data-v-0cf60114="" class="title-box"><span data-v-0cf60114=""
+                                                        class="count">${item.read_count} 已读</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div data-v-5b957c59="" data-v-5f4c8686="" data-v-0cf60114=""
+                                        class="lazy thumb thumb loaded"
+                                        style="background-image: url(&quot;/resource/image/b11.png&quot;); background-size: cover;">
+                                </div>
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </li>`;
+        });
+        $('#data_list').html(html);
+    }
+
+    function filter(type) {
+        $("#filter_ul").find("li").find('a').removeClass('on');
+        $("#filter_ul").find(`li:eq(${type})`).find('a').addClass('on');
+        if (type === 0) {
+            generate(List);
+        } else {
+            var filterList = [];
+            List.forEach(function (item) {
+                if (item.type === type) filterList.push(item);
+            })
+            generate(filterList);
+        }
+    }
+
+    init();
 </script>
 
 </html>
