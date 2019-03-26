@@ -62,14 +62,14 @@ $(function() {
       });
 
       //解决首屏图片加载慢问题
-      var ele = document.querySelector('.shouyeimg2');
-      var imgUrl = document.querySelector('.item01').getAttribute('data-src');
-      var imgObject = new Image();
-      imgObject.src = imgUrl;
-      imgObject.onload = function() {
-        ele.src = imgUrl;
-        // ele.setAttribute('class', 'thumbnails complete');
-      };
+      // var ele = document.querySelector('.shouyeimg2');
+      // var imgUrl = document.querySelector('.item01').getAttribute('data-src');
+      // var imgObject = new Image();
+      // imgObject.src = imgUrl;
+      // imgObject.onload = function() {
+      //   ele.src = imgUrl;
+      //   // ele.setAttribute('class', 'thumbnails complete');
+      // };
 
     //   var ele1 = document.querySelector('.shouyeimg3');
     //   var imgUrl1 = document.querySelector('.item02').getAttribute('data-src');

@@ -57,7 +57,7 @@
 } */
 
 #banner_swiper .swiper-container{
-    height: 450px !important;
+    height: 550px !important;
 }
 
 #product_swiper {
@@ -120,7 +120,7 @@
 
 #banner_swiper .swiper-slide img{
     width: 100%;
-    height: 450px;
+    height: 550px;
 }
 
 #banner_swiper .swiper-pagination{
