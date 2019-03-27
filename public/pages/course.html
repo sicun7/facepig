@@ -118,6 +118,18 @@
             min
         return newTime;
     }
+    
+    function parseFirstImg(content){  
+        content = content || '';  
+        var imgs = content.match(/<img[^>]+>/g);
+        if(imgs && Array.isArray(imgs) && imgs.length > 0){
+            var i = imgs[0];
+            i = i.substring(i.indexOf('src="')+5);
+            i = i.substring(0,i.indexOf('"'))
+            return i;
+        }
+        else  return "/resource/image/b11.png";
+    }
 
     function generate(list) {
         var html = '';
@@ -161,7 +173,7 @@
 
                                 <div data-v-5b957c59="" data-v-5f4c8686="" data-v-0cf60114=""
                                         class="lazy thumb thumb loaded"
-                                        style="background-image: url(&quot;/resource/image/b11.png&quot;); background-size: cover;">
+                                        style="background-image: url(&quot;${parseFirstImg(item.content)}&quot;); background-size: cover;">
                                 </div>
 
                             </div>
